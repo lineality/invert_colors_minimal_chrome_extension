@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Invert Colors Minimal",
+  "name": "Dark Mode Flip",
   "version": "1.0",
   "content_scripts": [
     {
