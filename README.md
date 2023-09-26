@@ -56,3 +56,14 @@ turn off these permissions, which is terrible.
 
 Set everything to block or mute. Again, this minimal invert-colors 
 extension does not need any permissions.
+
+# Settings: 
+Go to: extensions puzzle-piece icon -> minimal_color_invert extension ->  
+-> three vertical dots ->  "This can read and change site data" -> 
+
+Seemingly randomly on each browser instance, the default here may be different.
+Sometimes this is default set to: 
+- when you click the extension
+- on all sites
+
+So you will likely need to adjust this.
