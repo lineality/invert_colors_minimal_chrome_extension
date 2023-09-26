@@ -63,7 +63,20 @@ Go to: extensions puzzle-piece icon -> minimal_color_invert extension ->
 
 Seemingly randomly on each browser instance, the default here may be different.
 Sometimes this is default set to: 
-- when you click the extension
-- on all sites
+- When you click the extension
+- On _____ (this site)
+- On all sites
 
 So you will likely need to adjust this.
+
+If you know you will always use this for a given white-background site,
+you may opt to select the 2nd: On (this site) choice, which will not 
+affect colors on other sites.
+
+
+# For Firefox:
+This is a firefox extension (not by me) that at least shows
+code...if that is really what is running, who knows.
+```
+https://github.com/Max-Github/FireFoxInvertColors
+```
