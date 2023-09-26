@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Invert Colors Minimal",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["invert_color_minimal_chrome_content.js"]
+    }
+  ]
+}
