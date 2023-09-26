@@ -20,22 +20,39 @@ or reset if you refresh the tab. You will need to open a new tab to turn
 the extension (color reversal) off. 
  
 # Steps to Deploy Extension
-1. Create a new directory(folder) and put these files in it:
+1. Create a new directory(folder) and put these two files in it:
 - manifest.json
 - invert_color_minimal_chrome_content.js  
 
-2. Open chrome://extensions/ in your Chrome browser.
+Note: The "invert_color_minimal_chrome_content.js" file should be just one line of code:
+```
+document.body.style.filter = "invert(100%)";
+```
+
+2. Open/Go to chrome://extensions/ in your Chrome browser.
 3. Turn on "Developer mode" at the top right.
 4. Click "Load unpacked" and select your directory.
-- An icon should appear near your address bar. 
-5. Click the icon that appeared and it should invert the colors on the current page.
+- A puzzle-piece icon should appear to the right of your URL-address bar. 
+5. Click the puzzle-piece icon that should be to the right of your URL-address bar to see a drop-down menu of extensions.
+6. "Invert Colors Minimal" should appear in that list. Click "Invert Colors Minimal" to invert to dark-mode.
 
 # Permissions:
-extensions -> this minima_color_invert extension ->  
+This extension does not need ANY permissions.
+
+Go to: extensions puzzle-piece icon -> minimal_color_invert extension ->  
 -> three vertical dots ->  "View web permissions" -> 
 
-These will be permissions for this extension for all sites.
-For reasons beyond my imagination, google presets permissions
+The url will look something like this:
+```
+chrome://settings/content/siteDetails?site=chrome-extension%blahblahblah
+```
+
+### This page should show permissions for this extension for all sites:
+
+For reasons beyond my imagination, google pre-sets permissions
 very openly. So you need to MANUALLY set everything to block or mute.
 So far as I know there is no way for an extension developer to
 turn off these permissions, which is terrible. 
+
+Set everything to block or mute. Again, this minimal invert-colors 
+extension does not need ANY permissions.
