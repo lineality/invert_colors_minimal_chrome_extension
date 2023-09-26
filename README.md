@@ -55,4 +55,4 @@ So far as I know there is no way for an extension developer to
 turn off these permissions, which is terrible. 
 
 Set everything to block or mute. Again, this minimal invert-colors 
-extension does not need ANY permissions.
+extension does not need any permissions.
