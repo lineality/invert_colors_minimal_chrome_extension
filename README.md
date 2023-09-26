@@ -4,16 +4,20 @@
 # About Invert Colors Minimal
 
 ## Description
-With security, transparency, and data-hygiene in mind. 
-This is a minimal chrome extension to invert colors in a browser tab,
-e.g. to reduce eye-strain by turning inscrutably white pages black.
+With security, transparency, and data-hygiene in mind: 
+This is a minimal chrome extension to invert colors in a browser tab
+(e.g. to reduce eye-strain by turning inscrutably white pages black)
+that you can manually deploy in your browser, so that you know
+exactly what code you are running. Black-Box extensions in the 
+extension-store may be safe to use, but it is very difficult for an average
+user to test this.
 This requires no permissions. If the version you have tries to get any
 permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
 
 A trade-off of the extreme minimalism, is that the extension does not toggle
 or reset if you refresh the tab. You will need to open a new tab to turn 
-the extension off. 
+the extension (color reversal) off. 
  
 # Steps to Deploy Extension
 1. Create a new directory(folder) and put these files in it:
