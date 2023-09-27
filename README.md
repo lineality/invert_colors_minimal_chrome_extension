@@ -121,7 +121,7 @@ as clean as the super-simple version, and (if ironically) it can NOT be set to a
 
 ### 3. Pop-Up Nightmare 1996 Garbage Yardsale
 3. A theoretical 'pop-up' bloat-fest nightmare that I have never seen actually work in chrome is option 3. (
-(I say 'in chrome' because a firefox invert app that actaully links to github code, a mad laberyth of code and directories,
+(I say 'in chrome' because a firefox invert app that actually links to github code (see link below), a mad laberyth of code and directories,
 may use this...but good luck understanding that spawling birds-nest of code that is supposed to do only one simple thing.
 To my mind this is a case study in what a problem looks like, where you have endless dodgy technologies and tests and features and tricks and popups and permissions and on and on and on in ever-expanding code, to simply replace this one very simple very short single line, single command: "document.body.style.filter = "invert(100%)";" And "popups"...really?
 This is like offering to give someone a horrible disease. Just no. No popups. NO. Bad idea. Bad dog.
