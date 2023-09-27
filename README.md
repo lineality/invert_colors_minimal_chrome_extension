@@ -47,7 +47,58 @@ The url will look something like this:
 chrome://settings/content/siteDetails?site=chrome-extension%blahblahblah
 ```
 
-### This page should show permissions for this extension for all sites:
+
+# Design, Plan, and Goal
+
+So far as I understand, as a non-veterin at javascript (which I consider a plague on web-simplicity and security)
+and browser-extensions (which I consider I plague on web security),
+there are three ways in chrome to effect a dark-mode change of colour
+(where light-mode pages destroy people's eyes yet are often still
+after so many years a tyranical default. One way of thinking about this may be
+that the extension needs to have some way of turning on and knowing what
+page or tab or site to apply to. There is also a 4th way, but this is 
+effectively impossible for a simpe chrome-extension-store add so far
+as I know.
+### 1. All Urls
+1. <all urls> This is not a "permission" in most uses of the term, but
+google considers this a very permissive or potentially insecure way to write
+an extension because it can apply to any website. I did try to avoid using this, but the more
+I look at different ways an extension can work, and trying them out,
+this really seem the best to me for several reasons with only one draw-back for the user.
+
+A. This is the simplest extension I know of, asside from the manifest-file that names and describes the extension
+the entire extenion is this one short line, nothing more: "document.body.style.filter = "invert(100%)";"
+Asside from no extension at all, I can't think of a simpler, cleaner, not hiding anything,
+not doing anything everyone can't understand, not-dangerous, line of code. This inverts the colors 100%, and that is all.
+B. Because of how chrome is set up, there are three broswer catagories on top of the extensions all-url vs. active-tab design,
+so the user chooses 1. use this all the time (not so useful), 2. use this just right now (very useful), 3. use it for this url (very useful)
+So now I do not get white-light flashed every time I go to the same website and need to turn that off: every new doc, every new etc.
+(yes, google-office-suite being light mode is a major issue for people with eyeballs)
+The only downside, which so far has not been an issue for me in real life, is that it does not toggle on and off at the touch of a button,
+you need to turn it off and open a new tab to turn the color-flip off.
+But literally the only time I ever wanted to rapidly taggle back and forth was when I was require by google to upload a
+demo photo of the app working, which I chose to show a before and after image. In daily use, I don't flash my eyes with strobe toggle.
+
+### 2. Active Tab
+2. [active tab] Active-tab IS technicaally a permission, which allows the browser to know to act on the tab you are on.
+Perhaps in other uses this allows the extension to track active tabs and that is why it is considered a 'dangerous permission.'
+Maybe this is useful but I loath 'requesting' any permission that is not absolutely needed, and the code is not
+as clean as the super-simple version, and (if ironically) it can NOT be set to always convert the same websites
+(so it lets advertisers track you but you can't track your own needs? Great technology.)
+
+### 3. Pop-Up Nightmare 1996 Garbage Yardsale
+3. A theoretical 'pop-up' bloat-fest nightmare that I have never seen actually work in chrome is option 3. (
+(I say 'in chrome' because a firefox invert app that actaully links to github code, a mad laberyth of code and directories,
+may use this...but good luck understanding that spawling birds-nest of code that is supposed to do only one simple thing.
+To my mind this is a case study in what a problem looks like, where you have endless dodgy technologies and tests and features and tricks and popups and permissions and on and on and on in ever-expanding code, to simply replace this one very simple very short single line, single command: "document.body.style.filter = "invert(100%)";" And "popups"...really?
+This is like offering to give someone a horrible disease. Just no. No popups. NO. Bad idea. Bad dog.
+
+###  4. Hard Coded Site List
+4. instead of all-urs, make a list which urls, which sites, you want to apply this extension to. This migth be good for some users who don't mind and have the time to manually hard code script into archiving versioning and re-installing their new dev-code into their active browers on the fly as they go to different websites...but even that is 'insecure' in some ways of thinking,
+and it surely is cumbersome. But for some institutions or use-cases, maybe it makes sense. It is a possible option (I think). 
+
+
+### Many catagories of "permissions" (with a goal of zero-permissions)
 
 For reasons beyond my imagination, google pre-sets permissions
 very openly. So you need to MANUALLY set everything to block or mute.
