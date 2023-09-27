@@ -2,16 +2,25 @@
 ## Dark Mode: eye-saving invert colors minimal chrome browser extension
 
 # About Invert-Colors-Minimal
+```
+document.body.style.filter = "invert(100%)";
+```
+How can one short line of code be so cumbersome to explain...set's find out!
 
 ## Description
 With security, transparency, and data-hygiene in mind: 
 This is a minimal chrome extension to invert colors in a browser tab
-(e.g. to reduce eye-strain by turning inscrutably white pages black)
-that you can manually deploy in your browser, so that you know
-exactly what code you are running. Black-Box extensions in the 
-extension-store may be safe to use, but it is very difficult for an average
-user to test this.
-This requires no permissions. If the version you have tries to get any
+(e.g. to reduce eye-strain by turning light-mode pages into dark-mode pages).
+
+You can, and I recommend that you do, manually deploy this in your browser, 
+not using code downloaded from any site,
+so that you know exactly what code you are running. Black-Box extensions in  
+extension-stores may or may not be safe to use, and it is very difficult for 
+an average user to test this.
+
+This very minimal extension requires no "permissions." 
+However that term is sadly unclear, so I will try to explain the details.
+If the version you have tries to get any
 permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
 
@@ -119,17 +128,26 @@ and it surely is cumbersome. But for some institutions or use-cases, maybe it ma
 Maybe you could create a giant office-suite of software living in the extension that allows users to write in their site list...but that is not simplicty with security either.
 
 
+# Those OTHER Permissions...
+
 ### Many catagories of "permissions" (with a goal of zero-permissions)
 
-For reasons beyond my imagination, google pre-sets permissions
-very openly. So you need to MANUALLY set everything to block or mute.
+In addition to 'permissions' 'requested' inside the design of the 
+extension, there are 'permissions' that are in the browser settings
+that the extension has no control over.
+
+For reasons beyond my imagination, google pre-sets these browser-settings permissions
+very, horribly, openly. So each user needs to (YOU need to) MANUALLY set everything to block or mute.
 So far as I know there is no way for an extension developer to
 turn off these permissions, which is terrible. 
 
 Set everything to block or mute. Again, this minimal invert-colors 
 extension does not need any permissions.
 
-# Settings: 
+# Other Settings: 
+
+This extension will. 
+
 Go to: extensions puzzle-piece icon -> minimal_color_invert extension ->  
 -> three vertical dots ->  "This can read and change site data" -> 
 
