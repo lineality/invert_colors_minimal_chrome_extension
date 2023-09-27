@@ -84,6 +84,9 @@ chrome://settings/content/siteDetails?site=chrome-extension%blahblahblah
 
 # Design, Plan, and Goal
 
+This minimal extension is designed for people to install on their own, but I will also try to make
+it available in the chrome exension store, though I prefer that people check the code of what they install. 
+
 So far as I understand, as a non-veteran at javascript (which I consider a plague on web-simplicity and security)
 and browse-extensions (which I consider I plague on web security),
 there are three ways in chrome to effect a dark-mode change of colour
@@ -93,7 +96,12 @@ that the extension needs to have some way of turning on and knowing what
 page or tab or site to apply to. There is also a 4th way, but this is 
 effectively impossible for a simple chrome-extension-store offering so far
 as I know.
+
 ### 1. All Urls
+1. I do not want to be misleading but I am frankly confused by the semantics of the terms "permission" and "pattern matching"
+in this case. Saying a user can apply this color-iverter to all-urls, or "anything" is catagorized as "pattern matching"
+and the extension requestion a host-permission. I do not see how 'anything' can be logically called pattern-matching,
+but the semantics of computer science jargon have veered into completely nonsense long ago. 
 1. <all urls> This is not a "permission" in most uses of the term, but
 google considers this a very permissive or potentially insecure way to write
 an extension because it can apply to any website. I did try to avoid using this, but the more
