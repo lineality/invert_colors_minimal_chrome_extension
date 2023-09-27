@@ -93,7 +93,7 @@ may use this...but good luck understanding that spawling birds-nest of code that
 To my mind this is a case study in what a problem looks like, where you have endless dodgy technologies and tests and features and tricks and popups and permissions and on and on and on in ever-expanding code, to simply replace this one very simple very short single line, single command: "document.body.style.filter = "invert(100%)";" And "popups"...really?
 This is like offering to give someone a horrible disease. Just no. No popups. NO. Bad idea. Bad dog.
 
-###  4. Hard Coded Site List
+### 4. Hard Coded Site List
 4. instead of all-urs, make a list which urls, which sites, you want to apply this extension to. This migth be good for some users who don't mind and have the time to manually hard code script into archiving versioning and re-installing their new dev-code into their active browers on the fly as they go to different websites...but even that is 'insecure' in some ways of thinking,
 and it surely is cumbersome. But for some institutions or use-cases, maybe it makes sense. It is a possible option (I think). 
 
