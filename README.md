@@ -134,7 +134,7 @@ Maybe you could create a giant office-suite of software living in the extension 
 
 # Those OTHER Permissions...
 
-### Many catagories of "permissions" (with a goal of zero-permissions)
+### Many catagories of "permissions" (my goal is zero-permissions)
 
 In addition to 'permissions' 'requested' inside the design of the 
 extension, there are 'permissions' that are in the browser settings
