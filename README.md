@@ -147,6 +147,13 @@ affect colors on other sites.
 
 
 # For Firefox:
+
+#### A minimal toggling firefox extension/add-on (to color invert for dark mode) that I wrote, which uses the active-tab approach.
+```
+https://github.com/lineality/invert_colors_minimal_firefox_addon
+```
+
+
 This is a firefox extension (not by me) that at least shows
 code...if that is really what is running, who knows.
 ```
