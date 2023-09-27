@@ -154,8 +154,10 @@ https://github.com/lineality/invert_colors_minimal_firefox_addon
 
 
 
-This is a firefox extension (not by me) that at least shows
-code...if that is really what is running, who knows.
+This, in contrast, is a firefox extension (not by me) that at least shows
+code...if that is really what is running the store-download, who knows. 
+The code is not minimal by my standards, but 
+I do not mean to cast aspertions on the developer who may have done good work.
 ```
 https://github.com/Max-Github/FireFoxInvertColors
 ```
