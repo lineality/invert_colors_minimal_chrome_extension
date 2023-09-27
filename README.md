@@ -33,20 +33,13 @@ https://twit.tv/shows/security-now/episodes/938
 "Research reveals vulnerabilities in browser extensions that allow them to steal plaintext passwords from a website's HTML source code. Even sites like Google, Facebook, Amazon, IRS, and Capital One are affected."
 
 ## Naming things is hard. Easy things are hard.
-This very minimal extension requires no "permissions" such as sensor data or private information.
+This very minimal extension requires no "permissions." 
 However that term "permissions" is sadly unclear, 
 and defined and used in many different ways all within the chrome extension context.
-Being able to invert 'all urls' into dark mode is, technically, a 'host permission,' 
-according to some technical definition because 'any url' is a 'pattern,' technically.
-But in any normal list "permissions" that an app or extension may request, this
-extension does not collect or track anything, it just runs one short line of code that inverts colors into dark-mode.
-
-I will try to explain the details.
-And if the version you have tries to get any
+So, I will try to explain the details.
+If the version you have tries to get any
 permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
-Also, see below, you need to manually turn off browswer permissions that are not set by the extension.
-This extension does not want or need of that.
 
 A trade-off of the extreme minimalism, is that the extension does not toggle always
 or reset if you refresh the tab (chrome is not consist ant here). As a backup can open a new tab to turn 
@@ -106,9 +99,15 @@ as I know.
 
 ### 1. All Urls
 1. I do not want to be misleading but I am frankly confused by the semantics of the terms "permission" and "pattern matching"
-in this case. Saying a user can apply this color-iverter to all-urls, or "anything" is catagorized as "pattern matching"
-and the extension requestion a host-permission. I do not see how 'anything' can be logically called pattern-matching,
+in this case. Saying a user can apply this color-inverter to any and all-urls, or "anything" is catagorized as "pattern matching"
+and because of that this extension is considered by google to request what they describe as a "host-permission."
+But this is an after-the-fact retro-active and rather academic use of semantics. I specifically avoided
+any and all "permissions" of any kind, yet somehow 'no pattern' == 'pattern matching' and no-permissions becomes 'host permission.'
+Given the monstrosities of code people accept as normal, describing these fewer than 10 lines of code
+as "an overreach of deep host permission pattern matching" is a complete devorse from reality. 
+I do not see how 'anything' can be logically called pattern-matching,
 but the semantics of computer science jargon have veered into completely nonsense long ago. 
+
 1. <all urls> This is not a "permission" in most uses of the term, but
 google considers this a very permissive or potentially insecure way to write
 an extension because it can apply to any website. I did try to avoid using this, but the more
@@ -121,7 +120,7 @@ Aside from no extension at all, I can't think of a simpler, cleaner, not hiding 
 not doing anything everyone can't understand, not-dangerous, line of code. This inverts the colors 100%, and that is all.
 
 B. Because of how chrome is set up, there are three browser categories on top of the extensions all-url vs. active-tab design,
-so the user chooses 1. use this all the time (not so useful), 2. use this just right now (very useful), 3. use it for this url (very useful)
+so the user chooses 1. use this all the time (not so useful, because some pages like github are already in dark mode), 2. use this just right now (very useful), 3. use it for this url (very useful)
 So now I do not get white-light flashed every time I go to the same website and need to turn that off: every new doc, every new etc.
 (yes, google-office-suite being light mode is a major issue for people with eyeballs)
 The only downside, which so far has not been an issue for me in real life, is that it does not toggle on and off at the touch of a button,
@@ -141,9 +140,9 @@ is a hidden snag somewhere, but I am confused by any description of this extensi
 to literally any other extension which is doing who-knows-what with expected-to-be-terrible side effects. 
 
 ### 2. Active Tab
-2. [active tab] Active-tab IS technically a permission, which allows the browser to know to act on the tab you are on.
+2. [active tab] Active-tab IS more specifically a catagory of requested "permission," which allows the browser to know to act on the tab you are on.
 Perhaps in other uses this allows the extension to track active tabs and that is why it is considered a 'dangerous permission.'
-Maybe this is useful but I loath 'requesting' any permission that is not absolutely needed, and the code is not
+Maybe this 'active-tab' is useful but I loath 'requesting' any permission that is not absolutely needed, and the code is not
 as clean as the super-simple version, and (if ironically) it can NOT be set to always convert the same websites
 (so it lets advertisers track you but you can't track your own needs? Great technology.)
 
