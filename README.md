@@ -107,7 +107,8 @@ This is like offering to give someone a horrible disease. Just no. No popups. NO
 
 ### 4. Hard Coded Site List
 4. instead of all-urs, make a list which urls, which sites, you want to apply this extension to. This migth be good for some users who don't mind and have the time to manually hard code script into archiving versioning and re-installing their new dev-code into their active browers on the fly as they go to different websites...but even that is 'insecure' in some ways of thinking,
-and it surely is cumbersome. But for some institutions or use-cases, maybe it makes sense. It is a possible option (I think). 
+and it surely is cumbersome. But for some institutions or use-cases, maybe it makes sense. It is a possible option (I think).
+Maybe you could create a giant office-suite of software living in the extension that allows users to write in their site list...but that is not simplicty with security either.
 
 
 ### Many catagories of "permissions" (with a goal of zero-permissions)
