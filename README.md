@@ -1,6 +1,9 @@
 ### invert_colors_minimal_chrome_extension
 ## Dark Mode: eye-saving invert colors minimal chrome browser extension
 
+This extension reverses the colors of a web-page making light dark,
+as a simple if impefect way to achieve eye-friendly Dark Mode.
+
 # About Invert-Colors-Minimal
 ```
 document.body.style.filter = "invert(100%)";
