@@ -1,7 +1,7 @@
 ### invert_colors_minimal_chrome_extension
 ## Dark Mode: eye-saving invert colors minimal chrome browser extension
 
-# About Invert Colors Minimal
+# About Invert-Colors-Minimal
 
 ## Description
 With security, transparency, and data-hygiene in mind: 
