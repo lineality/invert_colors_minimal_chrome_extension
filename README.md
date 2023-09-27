@@ -18,8 +18,16 @@ check default settings (which may be outside of the extension itself).
 A trade-off of the extreme minimalism, is that the extension does not toggle
 or reset if you refresh the tab. You will need to open a new tab to turn 
 the extension (color reversal) off. 
- 
-# Steps to Deploy Extension
+
+I recommend putting the few simple lines of code into your browser manually (making your own extension)
+rather than trusting, running, or even downloading anything that might be harmful. 
+Maybe what you load from the extension store is not what it says. Maybe
+it will be replaced with updated different code at any time.
+This is a few lines of code you can easily install yourself manually for an extension you can 100% 
+understand and trust. (As far as I undersand...that is the goal.)
+
+
+# Steps to Deploy Extension Yourself from Code
 1. Create a new directory(folder) and put these two files in it:
 - manifest.json
 - invert_color_minimal_chrome_content.js  
