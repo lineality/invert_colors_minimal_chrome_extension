@@ -2,7 +2,7 @@
 ## Dark Mode: eye-saving invert colors minimal chrome browser extension
 
 This extension reverses the colors of a web-page making light into dark,
-or vice-versa, as a simple if impefect way to achieve eye-friendly Dark Mode.
+or vice-versa, as a simple if imperfect way to achieve eye-friendly Dark Mode.
 
 # About Invert-Colors-Minimal
 ```
@@ -35,14 +35,14 @@ https://twit.tv/shows/security-now/episodes/938
 ## Naming things is hard. Easy things are hard.
 This very minimal extension requires no "permissions." 
 However that term "permissions" is sadly unclear, 
-and defined and used in many different ways all within the chome extension context.
+and defined and used in many different ways all within the chrome extension context.
 So, I will try to explain the details.
 If the version you have tries to get any
 permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
 
 A trade-off of the extreme minimalism, is that the extension does not toggle always
-or reset if you refresh the tab (chrome is not consistant here). As a backup can open a new tab to turn 
+or reset if you refresh the tab (chrome is not consist ant here). As a backup can open a new tab to turn 
 the extension (color reversal) off. 
 
 I recommend putting the few simple lines of code into your browser manually (making your own extension)
@@ -50,15 +50,15 @@ rather than trusting, running, or even downloading anything that might be harmfu
 Maybe what you load from the extension store is not what it says. Maybe
 it will be replaced with updated different code at any time.
 This is a few lines of code you can easily install yourself manually for an extension you can 100% 
-understand and trust. (As far as I undersand...that is the goal.)
+understand and trust. (As far as I understand...that is the goal.)
 
 
 # Steps to Deploy Extension Yourself from Code
 1. Create a new directory(folder) and put these two files in it:
 - manifest.json
-- invert_color_minimal_chrome_content.js  
+- invert_colors.js  
 
-Note: The "invert_color_minimal_chrome_content.js" file should be just one line of code:
+Note: The "invert_colors.js" file should be just one line of code:
 ```
 document.body.style.filter = "invert(100%)";
 ```
@@ -84,14 +84,14 @@ chrome://settings/content/siteDetails?site=chrome-extension%blahblahblah
 
 # Design, Plan, and Goal
 
-So far as I understand, as a non-veterin at javascript (which I consider a plague on web-simplicity and security)
-and browser-extensions (which I consider I plague on web security),
+So far as I understand, as a non-veteran at javascript (which I consider a plague on web-simplicity and security)
+and browse-extensions (which I consider I plague on web security),
 there are three ways in chrome to effect a dark-mode change of colour
 (where light-mode pages destroy people's eyes yet are often still
-after so many years a tyranical default. One way of thinking about this may be
+after so many years a tyrannical default. One way of thinking about this may be
 that the extension needs to have some way of turning on and knowing what
 page or tab or site to apply to. There is also a 4th way, but this is 
-effectively impossible for a simpe chrome-extension-store add so far
+effectively impossible for a simple chrome-extension-store add so far
 as I know.
 ### 1. All Urls
 1. <all urls> This is not a "permission" in most uses of the term, but
@@ -100,12 +100,12 @@ an extension because it can apply to any website. I did try to avoid using this,
 I look at different ways an extension can work, and trying them out,
 this really seem the best to me for several reasons with only one draw-back for the user.
 
-A. This is the simplest extension I know of, asside from the manifest-file that names and describes the extension
-the entire extenion is this one short line, nothing more: "document.body.style.filter = "invert(100%)";"
-Asside from no extension at all, I can't think of a simpler, cleaner, not hiding anything,
+A. This is the simplest extension I know of, aside from the manifest-file that names and describes the extension
+the entire extension is this one short line, nothing more: "document.body.style.filter = "invert(100%)";"
+Aside from no extension at all, I can't think of a simpler, cleaner, not hiding anything,
 not doing anything everyone can't understand, not-dangerous, line of code. This inverts the colors 100%, and that is all.
 
-B. Because of how chrome is set up, there are three broswer catagories on top of the extensions all-url vs. active-tab design,
+B. Because of how chrome is set up, there are three browser categories on top of the extensions all-url vs. active-tab design,
 so the user chooses 1. use this all the time (not so useful), 2. use this just right now (very useful), 3. use it for this url (very useful)
 So now I do not get white-light flashed every time I go to the same website and need to turn that off: every new doc, every new etc.
 (yes, google-office-suite being light mode is a major issue for people with eyeballs)
@@ -126,28 +126,28 @@ is a hidden snag somewhere, but I am confused by any description of this extensi
 to literally any other extension which is doing who-knows-what with expected-to-be-terrible side effects. 
 
 ### 2. Active Tab
-2. [active tab] Active-tab IS technicaally a permission, which allows the browser to know to act on the tab you are on.
+2. [active tab] Active-tab IS technically a permission, which allows the browser to know to act on the tab you are on.
 Perhaps in other uses this allows the extension to track active tabs and that is why it is considered a 'dangerous permission.'
 Maybe this is useful but I loath 'requesting' any permission that is not absolutely needed, and the code is not
 as clean as the super-simple version, and (if ironically) it can NOT be set to always convert the same websites
 (so it lets advertisers track you but you can't track your own needs? Great technology.)
 
-### 3. Pop-Up Nightmare 1996 Garbage Yardsale
+### 3. Pop-Up Nightmare 1996 Garbage Yard-sale
 3. A theoretical 'pop-up' bloat-fest nightmare that I have never seen actually work in chrome is option 3. (
-(I say 'in chrome' because a firefox invert app that actually links to github code (see link below), a mad laberyth of code and directories,
-may use this...but good luck understanding that spawling birds-nest of code that is supposed to do only one simple thing.
+(I say 'in chrome' because a firefox invert app that actually links to github code (see link below), a mad labyrinth of code and directories,
+may use this...but good luck understanding that sprawling birds-nest of code that is supposed to do only one simple thing.
 To my mind this is a case study in what a problem looks like, where you have endless dodgy technologies and tests and features and tricks and popups and permissions and on and on and on in ever-expanding code, to simply replace this one very simple very short single line, single command: "document.body.style.filter = "invert(100%)";" And "popups"...really?
 This is like offering to give someone a horrible disease. Just no. No popups. NO. Bad idea. Bad dog.
 
 ### 4. Hard Coded Site List
-4. instead of all-urs, make a list which urls, which sites, you want to apply this extension to. This might be good for some users who don't mind and have the time to manually hard code script into archiving versioning and re-installing their new dev-code into their active browers on the fly as they go to different websites...but even that is 'insecure' in some ways of thinking,
+4. instead of all-urs, make a list which urls, which sites, you want to apply this extension to. This might be good for some users who don't mind and have the time to manually hard code script into archiving versioning and re-installing their new dev-code into their active browsers on the fly as they go to different websites...but even that is 'insecure' in some ways of thinking,
 and it surely is cumbersome. But for some institutions or use-cases, maybe it makes sense. It is a possible option (I think).
-Maybe you could create a giant office-suite of software living in the extension that allows users to write in their site list...but that is not simplicty with security either.
+Maybe you could create a giant office-suite of software living in the extension that allows users to write in their site list...but that is not simplicity with security either.
 
 
 # Those OTHER Permissions...
 
-### Many catagories of "permissions" (my goal is zero-permissions)
+### Many categories of "permissions" (my goal is zero-permissions)
 
 In addition to 'permissions' 'requested' inside the design of the 
 extension, there are 'permissions' that are in the browser settings
@@ -166,7 +166,7 @@ extension does not need any permissions.
 Chrome, Firefox, and probably all browsers work slightly different across the same or similar code and standards.
 Code that toggles on and off in firefox, may only toggle on and stay one in chrome. Code that you can set to work
 on any side in chrome, may not have those default settings in firefox. And each instance of each browser
-may have deferent defaults and even different allowed options...maybe I am dim, but I find that all not very simple. 
+may have different defaults and even different allowed options...maybe I am dim, but I find that all not very simple. 
 
 Go to: extensions puzzle-piece icon -> minimal_color_invert extension ->  
 -> three vertical dots ->  "This can read and change site data" -> 
@@ -195,7 +195,7 @@ https://github.com/lineality/invert_colors_minimal_firefox_addon
 This page below, in contrast, is a firefox extension (not by me) that at least shows
 code (good and thanks!)...if that is really what is running the store-download, who knows. 
 The code is not minimal by my standards, but 
-I do not mean to cast aspertions on the developer who may have done good work.
+I do not mean to cast aspersions on the developer who may have done good work.
 ```
 https://github.com/Max-Github/FireFoxInvertColors
 ```
