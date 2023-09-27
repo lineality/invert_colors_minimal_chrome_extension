@@ -150,7 +150,10 @@ extension does not need any permissions.
 
 # Other Settings: 
 
-This extension will. 
+Chrome, Firefox, and probably all browsers work slightly different across the same or similar code and standards.
+Code that toggles on and off in firefox, may only toggle on and stay one in chrome. Code that you can set to work
+on any side in chrome, may not have those default settings in firefox. And each instance of each browser
+may have deferent defaults and even different allowed options...maybe I am dim, but I find that all not very simple. 
 
 Go to: extensions puzzle-piece icon -> minimal_color_invert extension ->  
 -> three vertical dots ->  "This can read and change site data" -> 
