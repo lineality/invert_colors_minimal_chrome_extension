@@ -87,7 +87,9 @@ any user can run an extension in a practical way without anything they do not un
 no 'permissions' (in most definitions of the term), and no possibly secret changes in downloaded code.
 It's less than 10 lines, just type it in or copy past yourself. It doesn't get any better than that.
 The extension-store is completely bypassed along with all the risks and downsides. Loading potentially unknown code is completely bypassed.
-It is so simple you can write it yourself to do just one single thing: flip the colors on any site you select.
+It is so simple you can write it yourself to do just one single thing: flip the colors on any site you select. Maybe there
+is a hidden snag somewhere, but I am confused by any description of this extension as dangerous or permissive compared
+to literally any other extension which is doing who-knows-what with expected-to-be-terrible side effects. 
 
 ### 2. Active Tab
 2. [active tab] Active-tab IS technicaally a permission, which allows the browser to know to act on the tab you are on.
