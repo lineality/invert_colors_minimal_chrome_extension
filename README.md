@@ -41,8 +41,8 @@ If the version you have tries to get any
 permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
 
-A trade-off of the extreme minimalism, is that the extension does not toggle
-or reset if you refresh the tab. You will need to open a new tab to turn 
+A trade-off of the extreme minimalism, is that the extension does not toggle always
+or reset if you refresh the tab (chrome is not consistant here). As a backup can open a new tab to turn 
 the extension (color reversal) off. 
 
 I recommend putting the few simple lines of code into your browser manually (making your own extension)
