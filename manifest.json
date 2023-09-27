@@ -5,7 +5,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["invert_color_minimal_chrome_content.js"]
+      "js": ["invert_color_minimal_chrome.js"]
     }
   ]
 }
