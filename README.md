@@ -124,7 +124,7 @@ so the user chooses 1. use this all the time (not so useful, because some pages 
 So now I do not get white-light flashed every time I go to the same website and need to turn that off: every new doc, every new etc.
 (yes, google-office-suite being light mode is a major issue for people with eyeballs)
 The only downside, which so far has not been an issue for me in real life, is that it does not toggle on and off at the touch of a button,
-you need to turn it off and open a new tab to turn the color-flip off.
+you need to turn it off and either refresh or open a new tab to turn the color-flip off.
 But literally the only time I ever wanted to rapidly taggle back and forth was when I was require by google to upload a
 demo photo of the app working, which I chose to show a before and after image. In daily use, I don't flash my eyes with strobe toggle.
 
