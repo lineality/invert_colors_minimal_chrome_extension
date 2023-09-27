@@ -20,10 +20,20 @@ You can, and I recommend that you do, manually deploy this in your browser,
 not using code downloaded from any site,
 so that you know exactly what code you are running. Black-Box extensions in  
 extension-stores may or may not be safe to use, and it is very difficult for 
-an average user to test this.
+an average user to test this 
+and new browser extension vulnerabilities are being 
+uncovered continually, e.g. see:
 
+https://twit.tv/shows/security-now/episodes/938 
+
+#### Quote:
+"Research reveals vulnerabilities in browser extensions that allow them to steal plaintext passwords from a website's HTML source code. Even sites like Google, Facebook, Amazon, IRS, and Capital One are affected."
+
+## Naming things is hard. Easy things are hard.
 This very minimal extension requires no "permissions." 
-However that term is sadly unclear, so I will try to explain the details.
+However that term "permissions" is sadly unclear, 
+and defined and used in many different ways all within the chome extension context.
+So, I will try to explain the details.
 If the version you have tries to get any
 permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
