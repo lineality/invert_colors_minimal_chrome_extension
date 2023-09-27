@@ -91,7 +91,7 @@ there are three ways in chrome to effect a dark-mode change of colour
 after so many years a tyrannical default. One way of thinking about this may be
 that the extension needs to have some way of turning on and knowing what
 page or tab or site to apply to. There is also a 4th way, but this is 
-effectively impossible for a simple chrome-extension-store add so far
+effectively impossible for a simple chrome-extension-store offering so far
 as I know.
 ### 1. All Urls
 1. <all urls> This is not a "permission" in most uses of the term, but
