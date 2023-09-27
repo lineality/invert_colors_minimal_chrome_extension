@@ -70,6 +70,7 @@ A. This is the simplest extension I know of, asside from the manifest-file that 
 the entire extenion is this one short line, nothing more: "document.body.style.filter = "invert(100%)";"
 Asside from no extension at all, I can't think of a simpler, cleaner, not hiding anything,
 not doing anything everyone can't understand, not-dangerous, line of code. This inverts the colors 100%, and that is all.
+
 B. Because of how chrome is set up, there are three broswer catagories on top of the extensions all-url vs. active-tab design,
 so the user chooses 1. use this all the time (not so useful), 2. use this just right now (very useful), 3. use it for this url (very useful)
 So now I do not get white-light flashed every time I go to the same website and need to turn that off: every new doc, every new etc.
@@ -78,6 +79,15 @@ The only downside, which so far has not been an issue for me in real life, is th
 you need to turn it off and open a new tab to turn the color-flip off.
 But literally the only time I ever wanted to rapidly taggle back and forth was when I was require by google to upload a
 demo photo of the app working, which I chose to show a before and after image. In daily use, I don't flash my eyes with strobe toggle.
+
+C. The simplicity of this code makes it very feasible for any user to get the 2, 7, or 12 lines of code (depending on what you consider a 'line')
+and make sure it is exactly what they think it is, trust it to be, want it to be, and that they understand running it, 
+and upload it directly without needing to download anything from anywhere. To me this is a rare ideal case where
+any user can run an extension in a practical way without anything they do not understand, no hidden risk,
+no 'permissions' (in most definitions of the term), and no possibly secret changes in downloaded code.
+It's less than 10 lines, just type it in or copy past yourself. It doesn't get any better than that.
+The extension-store is completely bypassed along with all the risks and downsides. Loading potentially unknown code is completely bypassed.
+It is so simple you can write it yourself to do just one single thing: flip the colors on any site you select.
 
 ### 2. Active Tab
 2. [active tab] Active-tab IS technicaally a permission, which allows the browser to know to act on the tab you are on.
