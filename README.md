@@ -33,13 +33,20 @@ https://twit.tv/shows/security-now/episodes/938
 "Research reveals vulnerabilities in browser extensions that allow them to steal plaintext passwords from a website's HTML source code. Even sites like Google, Facebook, Amazon, IRS, and Capital One are affected."
 
 ## Naming things is hard. Easy things are hard.
-This very minimal extension requires no "permissions." 
+This very minimal extension requires no "permissions" such as sensor data or private information.
 However that term "permissions" is sadly unclear, 
 and defined and used in many different ways all within the chrome extension context.
-So, I will try to explain the details.
-If the version you have tries to get any
+Being able to invert 'all urls' into dark mode is, technically, a 'host permission,' 
+according to some technical definition because 'any url' is a 'pattern,' technically.
+But in any normal list "permissions" that an app or extension may request, this
+extension does not collect or track anything, it just runs one short line of code that inverts colors into dark-mode.
+
+I will try to explain the details.
+And if the version you have tries to get any
 permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
+Also, see below, you need to manually turn off browswer permissions that are not set by the extension.
+This extension does not want or need of that.
 
 A trade-off of the extreme minimalism, is that the extension does not toggle always
 or reset if you refresh the tab (chrome is not consist ant here). As a backup can open a new tab to turn 
