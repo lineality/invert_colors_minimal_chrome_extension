@@ -12,6 +12,10 @@ With security, transparency, and data-hygiene in mind:
 This is a minimal chrome extension to invert colors in a browser tab
 (e.g. to reduce eye-strain by turning light-mode pages into dark-mode pages).
 
+Yuo can toggle this on for any page/tab/window (open a new tab to un-toggle),
+or set that url to always be color-inverted to dark mode. 
+
+
 You can, and I recommend that you do, manually deploy this in your browser, 
 not using code downloaded from any site,
 so that you know exactly what code you are running. Black-Box extensions in  
