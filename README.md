@@ -172,21 +172,26 @@ If you go to site setting, you will see yet another set of "permissions"
 
 chrome://settings/content/siteDetails?site=chrome-extension://
 
-Please go to such 'site settings' permissions for all extensions you have installed, and after
+Please go to such 'site settings' permissions for at least this extension
+(perhaps all extensions you have installed), and after
 you have an annurism of rage and horror that such permissions as:
 - Motion sensors
 - Third-party sign-in
 - Payment handlers
 - Backfound sync
 - Sound (which has no block option, only mute)
-- 
+may BE SET TO "ALLOW" BY DEFAULT, please set everything to block (or mute in the case of sound). 
 
 For reasons beyond my imagination, google pre-sets these browser-settings permissions
-very, horribly, openly. So each user needs to (YOU need to) MANUALLY set everything to block or mute.
+extremely openly. So each user needs to (YOU need to) MANUALLY set everything to block or mute.
 So far as I know there is no way for an extension developer to
-turn off these permissions, which is terrible. 
+turn off these permissions, which is terrible. I do not want any permissions for this extension.
+The whole reason I created this extension is that I felt there must be a very minimal
+and understandable and transparent way to protect your eyes without exposing yourself to any risk.
+(Ideally, you can install your own code for this that you write, pershaps based on the one-line
+you need (asside from the manifest file) here in github). 
 
-Set everything to block or mute. Again, this minimal invert-colors 
+Please set everything to block or mute. Again, this minimal invert-colors 
 extension does not need any permissions.
 
 # Other Settings: 
