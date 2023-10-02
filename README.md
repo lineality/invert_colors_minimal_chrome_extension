@@ -167,6 +167,20 @@ In addition to 'permissions' 'requested' inside the design of the
 extension, there are 'permissions' that are in the browser settings
 that the extension has no control over.
 
+If you go to site setting, you will see yet another set of "permissions"
+(here actually called permission, not described indirectly as a 'host permission')
+
+chrome://settings/content/siteDetails?site=chrome-extension://
+
+Please go to such 'site settings' permissions for all extensions you have installed, and after
+you have an annurism of rage and horror that such permissions as:
+- Motion sensors
+- Third-party sign-in
+- Payment handlers
+- Backfound sync
+- Sound (which has no block option, only mute)
+- 
+
 For reasons beyond my imagination, google pre-sets these browser-settings permissions
 very, horribly, openly. So each user needs to (YOU need to) MANUALLY set everything to block or mute.
 So far as I know there is no way for an extension developer to
