@@ -174,7 +174,7 @@ chrome://settings/content/siteDetails?site=chrome-extension://
 
 Please go to such 'site settings' permissions for at least this extension
 (perhaps all extensions you have installed), and after
-you have an annurism of rage and horror that such permissions as:
+you have an aneurysm of rage and horror that such permissions as:
 - Motion sensors
 - Third-party sign-in
 - Payment handlers
