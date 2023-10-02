@@ -178,7 +178,7 @@ you have an aneurysm of rage and horror that such permissions as:
 - Motion sensors
 - Third-party sign-in
 - Payment handlers
-- Backfound sync
+- Background sync
 - Sound (which has no block option, only mute)
 may BE SET TO "ALLOW" BY DEFAULT, please set everything to block (or mute in the case of sound). 
 
