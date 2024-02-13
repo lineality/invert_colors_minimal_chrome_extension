@@ -5,18 +5,29 @@ This extension reverses the colors of a web-page making light into dark,
 or vice-versa, as a simple if imperfect way to achieve eye-friendly Dark Mode.
 
 # Steps to Deploy Extension Yourself from Code
-1. Create a new directory(folder) anywhere on your computer and with these two files in it:
+### 1. Create a new directory(folder) anywhere on your computer and with these two files in it:
 - manifest.json
 - invert_colors.js  
 
-#### TWo (of many) ways to set up these files in a folder/directory:
-1. clone this repo with:
+#### Two (of many) ways to set up these files in a folder/directory:
+- Clone this repo with:
 ```bash
 git clone https://github.com/lineality/invert_colors_minimal_chrome_extension.git
 ```
-2. download a zipped folder with these files in it. This link should download the file or you can manually drill down yourself:
+- Download a zipped folder with these files in it. This link should download the file or you can manually drill down yourself:
 
 #### https://github.com/lineality/invert_colors_minimal_chrome_extension/raw/main/dark_mode_invert_colors_chrome.zip
+
+
+### 2. Install in browser:
+- Open chrome browser.
+- Go to extensions -> Manage Extensions
+- 'Developer Mode' -> On (Top Right tottle-button)
+- 'Load Unpacked' (Top-ish Left button)
+- Select the (unzipped) directory where you two files are (as done above)
+
+### Ready:
+The extension should be ready to use. Configure how you want it to work (or do nothing) on a given site using the standard extensions drop down icon in chrome (top right), which looks like a puzzle piece.  
 
 
 
