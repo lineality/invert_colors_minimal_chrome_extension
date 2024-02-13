@@ -69,7 +69,7 @@ permissions, please stop and figure out what is going on, check the code,
 check default settings (which may be outside of the extension itself).
 
 A trade-off of the extreme minimalism, is that the extension does not toggle always
-or reset if you refresh the tab (chrome is not consist ant here). As a backup can open a new tab to turn 
+or reset if you refresh the tab (chrome is not consistent here). As a backup can open a new tab to turn 
 the extension (color reversal) off. 
 
 I recommend putting the few simple lines of code into your browser manually (making your own extension)
@@ -107,8 +107,7 @@ chrome://settings/content/siteDetails?site=chrome-extension%blahblahblah
 
 # Design, Plan, and Goal
 
-This minimal extension is designed for people to install on their own, but I will also try to make
-it available in the chrome exension store, though I prefer that people check the code of what they install. 
+This minimal extension is designed for people to install on their own, but I will also try to make it available in the chrome extension store, though I prefer that people check the code of what they install. 
 
 So far as I understand, as a non-veteran at javascript (which I consider a plague on web-simplicity and security)
 and browse-extensions (which I consider I plague on web security),
@@ -122,20 +121,19 @@ as I know.
 
 ### 1. All Urls
 1. I do not want to be misleading but I am frankly confused by the semantics of the terms "permission" and "pattern matching"
-in this case. Saying a user can apply this color-inverter to any and all-urls, or "anything" is catagorized as "pattern matching"
+in this case. Saying a user can apply this color-inverter to any and all-urls, or "anything" is categorized as "pattern matching"
 and because of that this extension is considered by google to request what they describe as a "host-permission."
 But this is an after-the-fact retro-active and rather academic use of semantics. I specifically avoided
 any and all "permissions" of any kind, yet somehow 'no pattern' == 'pattern matching' and no-permissions becomes 'host permission.'
 Given the monstrosities of code people accept as normal, describing these fewer than 10 lines of code
-as "an overreach of deep host permission pattern matching" is a complete devorse from reality. 
+as "an overreach of deep host permission pattern matching" is a complete divorce from reality. 
 I do not see how 'anything' can be logically called pattern-matching,
-but the semantics of computer science jargon have veered into completely nonsense long ago. 
+but the semantics of computer science jargon have veered into complete nonsense long ago. 
 
 1. <all urls> This is not a "permission" in most uses of the term, but
 google considers this a very permissive or potentially insecure way to write
 an extension because it can apply to any website. I did try to avoid using this, but the more
-I look at different ways an extension can work, and trying them out,
-this really seem the best to me for several reasons with only one draw-back for the user.
+I look at different ways an extension can work, and trying them out, this really seems the best to me for several reasons with only one draw-back for the user.
 
 A. This is the simplest extension I know of, aside from the manifest-file that names and describes the extension
 the entire extension is this one short line, nothing more: "document.body.style.filter = "invert(100%)";"
@@ -148,7 +146,7 @@ So now I do not get white-light flashed every time I go to the same website and 
 (yes, google-office-suite being light mode is a major issue for people with eyeballs)
 The only downside, which so far has not been an issue for me in real life, is that it does not toggle on and off at the touch of a button,
 you need to turn it off and either refresh or open a new tab to turn the color-flip off.
-But literally the only time I ever wanted to rapidly taggle back and forth was when I was require by google to upload a
+But literally the only time I ever wanted to rapidly toggle back and forth was when I was require by google to upload a
 demo photo of the app working, which I chose to show a before and after image. In daily use, I don't flash my eyes with strobe toggle.
 
 C. The simplicity of this code makes it very feasible for any user to get the 2, 7, or 12 lines of code (depending on what you consider a 'line')
@@ -163,7 +161,7 @@ is a hidden snag somewhere, but I am confused by any description of this extensi
 to literally any other extension which is doing who-knows-what with expected-to-be-terrible side effects. 
 
 ### 2. Active Tab
-2. [active tab] Active-tab IS more specifically a catagory of requested "permission," which allows the browser to know to act on the tab you are on.
+2. [active tab] Active-tab IS more specifically a category of requested "permission," which allows the browser to know to act on the tab you are on.
 Perhaps in other uses this allows the extension to track active tabs and that is why it is considered a 'dangerous permission.'
 Maybe this 'active-tab' is useful but I loath 'requesting' any permission that is not absolutely needed, and the code is not
 as clean as the super-simple version, and (if ironically) it can NOT be set to always convert the same websites
@@ -209,17 +207,16 @@ For reasons beyond my imagination, google pre-sets these browser-settings permis
 extremely openly. So each user needs to (YOU need to) MANUALLY set everything to block or mute.
 So far as I know there is no way for an extension developer to
 turn off these permissions, which is terrible. I do not want any permissions for this extension.
-The whole reason I created this extension is that I felt there must be a very minimal
-and understandable and transparent way to protect your eyes without exposing yourself to any risk.
-(Ideally, you can install your own code for this that you write, pershaps based on the one-line
-you need (asside from the manifest file) here in github). 
+The whole reason I created this extension is that I felt there must be a very minimal and understandable and transparent way to protect your eyes without exposing yourself to any risk.
+(Ideally, you can install your own code for this that you write, perhaps based on the one-line
+you need (aside from the manifest file) here in github). 
 
 Please set everything to block or mute. Again, this minimal invert-colors 
 extension does not need any permissions.
 
 # Other Settings: 
 
-Chrome, Firefox, and probably all browsers work slightly different across the same or similar code and standards.
+Chrome, Firefox, and probably all browsers work slightly differently across the same or similar code and standards.
 Code that toggles on and off in firefox, may only toggle on and stay one in chrome. Code that you can set to work
 on any side in chrome, may not have those default settings in firefox. And each instance of each browser
 may have different defaults and even different allowed options...maybe I am dim, but I find that all not very simple. 
