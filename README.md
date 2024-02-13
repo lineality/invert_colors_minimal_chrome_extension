@@ -14,7 +14,7 @@ or vice-versa, as a simple if imperfect way to achieve eye-friendly Dark Mode.
 ```bash
 git clone https://github.com/lineality/invert_colors_minimal_chrome_extension.git
 ```
-2. download a zipped folder with these files in it.
+2. download a zipped folder with these files in it. This link should download the file or you can manually drill down yourself:
 
 #### https://github.com/lineality/invert_colors_minimal_chrome_extension/raw/main/dark_mode_invert_colors_chrome.zip
 
