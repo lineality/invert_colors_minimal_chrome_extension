@@ -24,7 +24,7 @@ git clone https://github.com/lineality/invert_colors_minimal_chrome_extension.gi
 - Go to extensions -> Manage Extensions
 - 'Developer Mode' -> On (Top Right tottle-button)
 - 'Load Unpacked' (Top-ish Left button)
-- Select the (unzipped) directory where you two files are (as done above)
+- Select the (unzipped) directory where your two files are (as done above)
 
 ### Ready:
 The extension should be ready to use. Configure how you want it to work (or do nothing) on a given site using the standard extensions drop down icon in chrome (top right), which looks like a puzzle piece.  
