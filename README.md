@@ -4,6 +4,22 @@
 This extension reverses the colors of a web-page making light into dark,
 or vice-versa, as a simple if imperfect way to achieve eye-friendly Dark Mode.
 
+# Steps to Deploy Extension Yourself from Code
+1. Create a new directory(folder) anywhere on your computer and with these two files in it:
+- manifest.json
+- invert_colors.js  
+
+#### TWo (of many) ways to set up these files in a folder/directory:
+1. clone this repo with:
+```bash
+git clone https://github.com/lineality/invert_colors_minimal_chrome_extension.git
+```
+2. download a zipped folder with these files in it.
+```
+https://github.com/lineality/invert_colors_minimal_chrome_extension/raw/main/dark_mode_invert_colors_chrome.zip
+```
+
+
 # About Invert-Colors-Minimal
 ```
 document.body.style.filter = "invert(100%)";
@@ -15,7 +31,7 @@ With security, transparency, and data-hygiene in mind:
 This is a minimal chrome extension to invert colors in a browser tab
 (e.g. to reduce eye-strain by turning light-mode pages into dark-mode pages).
 
-Yuo can toggle this on for any page/tab/window (open a new tab to un-toggle),
+You can toggle this on for any page/tab/window (open a new tab to un-toggle),
 or set that url to always be color-inverted to dark mode. 
 
 
@@ -53,10 +69,6 @@ This is a few lines of code you can easily install yourself manually for an exte
 understand and trust. (As far as I understand...that is the goal.)
 
 
-# Steps to Deploy Extension Yourself from Code
-1. Create a new directory(folder) and put these two files in it:
-- manifest.json
-- invert_colors.js  
 
 Note: The "invert_colors.js" file should be just one line of code:
 ```
@@ -232,3 +244,5 @@ I do not mean to cast aspersions on the developer who may have done good work.
 ```
 https://github.com/Max-Github/FireFoxInvertColors
 ```
+
+
